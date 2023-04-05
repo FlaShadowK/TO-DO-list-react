@@ -1,0 +1,111 @@
+body {
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-container {
+    display: grid;
+    grid-template-columns: 60% auto auto ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.no-bullets {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+.card {
+    position: relative;
+    background-color: rgb(100, 100, 100);
+    min-height: 100px;
+    width: 60%;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 30px black;
+    margin-bottom: 20px;
+}
+
+.list-item > .title {
+    font-size: 26pt;
+    font-weight: bold;
+}
+
+.list-item > .date {
+    font-size: 13pt;
+    font-weight: lighter;
+}
+
+.button-success {
+    border: none;
+    color: white;
+    background-color: limegreen;
+    font-size: 22pt;
+    height: 50px;
+    width: 50px;
+    margin-left: 5px;
+    border-radius: 15px;
+    transition: background-color 200ms, color 200ms;
+}
+
+.button-danger {
+    border: none;
+    color: white;
+    background-color: red;
+    font-size: 24pt;
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+    transition: background-color 200ms, color 200ms;
+    transform: translateY(-1px);
+}
+
+.button-danger:hover {
+    background-color: darkred;
+    color: red;
+}
+
+.button-success:hover {
+    background-color: green;
+    color: limegreen;
+}
+
+.input {
+    margin-bottom: 10px;
+    height: 30px;
+    box-shadow: 1px 1px 3px black;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+
+}
+
+.input.title {
+    width: 60%;
+}
+
+.input.date {
+    text-align: center;
+}
+
+.submit-button {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    font-weight: bolder;
+    color: white;
+    background-color: limegreen;
+    transition: background-color 200ms, color 200ms;
+}
+
+.submit-button:hover {
+    background-color: green;
+    color: limegreen;
+}
